@@ -1,0 +1,148 @@
+@keyframes cathand {
+    0% {
+        rotate: 0deg;
+        left: 61%;
+        top: 63%;
+    }
+
+    100% {
+        rotate: -40deg;
+        left: 56%;
+        top: 66%;
+    }
+}
+
+#cathand {
+    width: 15%;
+    top: 66%;
+    left: 57.5%;
+    rotate: 0deg;
+    animation-name: cathand;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes logo-and-btn {
+    from {opacity: 0%;}
+    to {opacity: 100%;}
+}
+
+#logo {
+    animation-name: logo-and-btn;
+    animation-duration: 3.5s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+#btn-start {
+    animation-name: logo-and-btn;
+    animation-duration: 3.5s;
+    animation-direction: normal;
+    animation-iteration-count: 1;
+}
+
+.bung {
+    width: 12%;
+    top: 45%;
+    left: 68.5%;
+    opacity: 0;
+}
+
+.yell {
+    width: 12%;
+    top: 77%;
+    left: 5%;
+}
+
+@keyframes yell1 {
+    0% {
+        top: 77%;
+    }
+
+    100% {
+        top: 75%;
+    }
+}
+
+@keyframes yell23 {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+#yell1 {
+    animation-name: yell1;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#yell2 {
+    opacity: 1;
+    animation-name: yell23;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+
+}
+
+#yell3 {
+    opacity: 0;
+    animation-name: yell23;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.btn-start {
+    width: fit-content; 
+    padding-left: 1%;
+    padding-right: 1%;
+    padding-bottom: 0.5%;
+    background-color: #f768b8;
+    border: none;
+    border-bottom: #b43d80 solid 7px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 5vw;
+    border-radius: 60px;
+    font-family: Mali;
+    font-weight: 700;
+}
+
+.btn-start:hover {
+    margin-top: -5px;
+    border-bottom: #b43d80 solid 10px;
+}
+
+.btn-start:active {
+    margin-top: 0;
+    border-bottom: #b43d80 solid 7px;
+}
+
+#homepage {
+    animation-name: fade;
+    animation-duration: 1s;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+    animation-play-state: paused;
+}
+

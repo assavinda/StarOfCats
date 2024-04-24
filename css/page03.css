@@ -1,0 +1,404 @@
+/* page03 */
+
+#page03 {
+    display: block;
+}
+
+
+
+/* balloon */
+@keyframes balloon1 {
+    0% {top: 0%;}
+
+    100% {top: -5%;}
+}
+
+@keyframes balloon2 {
+    0% {top: 10%;}
+
+    100% {top: 5%;}
+}
+
+#b1 {
+    width: 20%;
+    top: 0%;
+    left: 10%;
+    animation-name: balloon1;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#b2 {
+    width: 10%;
+    top: 15%;
+    left: 70%;
+    animation-name: balloon2;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+/* cat1 */
+
+@keyframes eyes1 {
+    0% {
+        top: 63%;
+        left: 82.6%;
+    }
+
+    100% {
+        top: 63.5%;
+        left: 83%;
+    }
+}
+
+#eyes1 {
+    width: 8.5%;
+    top: 63%;
+    left: 82.6%;
+    animation-name: eyes1;
+    animation-duration: 0.75s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#ears1 {
+    width: 10%;
+    top: 55.2%;
+    left: 84.3%;
+}
+
+#leftarm1 {
+    width: 7.5%;
+    top: 73.3%;
+    left: 77%;
+}
+
+@keyframes rightarm1 {
+    0% {
+        top: 75%;
+        left: 82%;
+        rotate: 20deg;
+    }
+
+    100% {
+        top: 76%;
+        left: 82.5%;
+        rotate: 0deg;
+    }
+}
+
+#rightarm1 {
+    width: 7%;
+    top: 76%;
+    left: 82.5%;
+    animation-name: rightarm1;
+    animation-duration: 0.75s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: cubic-bezier(1 , 0.5, 0.75, 1);
+    animation-iteration-count: infinite;
+}
+
+#leg1 {
+    width: 7.5%;
+    top: 72%;
+    left: 71%;
+}
+
+@keyframes tail1 {
+    0% {
+        top: 56%;
+        left: 68%;
+        rotate: 0deg;
+    }
+
+    100% {
+        top: 57.5%;
+        left: 66.6%;
+        rotate: -20deg;
+    }
+}
+
+#tail1{
+    width: 8.5%;
+    top: 56%;
+    left: 68%;
+    animation-name: tail1;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes ball {
+    0% {
+        left: 80%;
+        rotate: 0deg;
+    }
+
+    100% {
+        left: 75%;
+        rotate: -170deg;
+    }
+}
+
+#ball1 {
+    width: 7%;
+    top: 75%;
+    left: 80%;
+    animation-name: ball;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+
+
+/* cat2 */
+
+@keyframes eyes2 {
+    0% {
+        top: 50%;
+    }
+
+    100% {
+        top: 49.5%;
+    }
+}
+
+#eyes2 {
+    width: 7.5%;
+    top: 50%;
+    left: 46.5%;
+    animation-name: eyes2;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+@keyframes leftarm2 {
+    0% {
+        left: 40.5%;
+        rotate: 0deg;
+    }
+
+    100% {
+        left: 41%;
+        rotate: 20deg;
+    }
+}
+
+#leftarm2 {
+    width: 7%;
+    top: 52.5%;
+    left: 40.5%;
+    animation-name: leftarm2;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes rightarm2 {
+    0% {
+        left: 53.4%;
+        rotate: -10deg;
+    }
+
+    100% {
+        left: 52.9%;
+        rotate: -20deg;
+    }
+}
+
+#rightarm2 {
+    width: 7.1%;
+    top: 52.5%;
+    left: 53.4%;
+    animation-name: rightarm2;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes foot2 {
+    0% {
+        rotate: -5deg;
+    }
+
+    100% {
+        rotate: 5deg;
+    }
+}
+
+#foot2 {
+    width: 10.5%;
+    top: 69%;
+    left: 44%;
+    rotate: 5deg;
+    animation-name: foot2;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+#ears2 {
+    width: 10.5%;
+    top: 42.2%;
+    left: 45.5%;
+}
+
+@keyframes butterfly {
+    0% {
+        top: 44.5%;
+    }
+
+    100% {
+        top: 43%;
+    }
+}
+
+#butterfly2 {
+    width: 2.5%;
+    top: 44.5%;
+    left: 49.5%;
+    animation-name: butterfly;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+/* cat3 */
+
+@keyframes eyes3 {
+    0% {
+        top: 66.2%;
+        left: 9.2%;
+    }
+
+    100% {
+        top: 66.7%;
+        left: 9.5%;
+    }
+}
+
+#eyes3 {
+    width: 11%;
+    top: 66.2%;
+    left: 9.2%;
+    animation-name: eyes3;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+#leftarm3 {
+    width: 6.5%;
+    top: 74%;
+    left: 8%;
+}
+
+#rightarm3 {
+    width: 6.5%;
+    top: 75.5%;
+    left: 17%;
+}
+
+#leg3 {
+    width: 7%;
+    top: 71%;
+    left: 24%;
+}
+
+@keyframes tail3 {
+    0% {
+        left: 21%;
+        rotate: 0deg;
+    }
+
+    100% {
+        left: 19%;
+        rotate: -20deg;
+    }
+}
+
+#tail3 {
+    width: 10.5%;
+    top: 42%;
+    left: 21%;
+    animation-name: tail3;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#ears3 {
+    width: 13.5%;
+    top: 55%;
+    left: 10%;
+}
+
+@keyframes mouse {
+    0% {
+        top: 73%;
+        left: 5%;
+        rotate: 0deg;
+    }
+
+    100% {
+        top: 74%;
+        left: 7%;
+        rotate: -15deg;
+    }
+}
+
+#mouse3 {
+    width: 10.5%;
+    top: 73.5%;
+    left: 5%;
+    animation-name: mouse;
+    animation-duration: 0.75s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+
+#p3cat1 {
+    left: 66%;
+    top: 55%;
+    width: 23%;
+    padding-top: 10%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+#p3cat2 {
+    left: 42%;
+    top: 43%;
+    width: 16.5%;
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-left: 0%;
+    padding-bottom: 10%;
+}
+
+#p3cat3 {
+    left: 5%;
+    top: 43%;
+    width: 12%;
+    padding-top: 20%;
+    padding-right: 0%;
+    padding-left: 15%;
+    padding-bottom: 2%;
+}

@@ -1,0 +1,63 @@
+@keyframes ufo {
+    0% {
+        top: 30%;
+    }
+
+    100% {
+        top: 40%;
+    }
+}
+
+#catUFO {
+    width: 80%;
+    top: 30%;
+    animation-name: ufo;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mek {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -5%;
+    }
+}
+
+.meks {
+    animation-name: mek;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#mek2 {
+    animation-direction: alternate-reverse;
+    left: -10%;
+}
+
+@keyframes flowerhead {
+    0% {
+        rotate: 0deg;
+    }
+
+    100% {
+        rotate: 20deg;
+    }
+}
+
+#flowerhead {
+    width: 18%;
+    top: 40%;
+    left: 79%;
+    animation-name: flowerhead;
+    animation-duration: 1.25s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}

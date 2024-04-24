@@ -1,0 +1,62 @@
+@keyframes earth {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: 2%;
+    }
+}
+
+#earth {
+    top: 0%;
+    animation-name: earth;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+.catwatchers {
+    width: 15%;
+}
+
+#catwatcher1 {
+    top: 47%;
+    left: 27%;
+}
+
+@keyframes catwatcher-tail {
+    0% {
+        rotate: 0deg;
+        left: 27%;
+        top: 58%;
+    }
+
+    100% {
+        rotate: -60deg;
+        left: 26%;
+        top: 62%;
+    }
+}
+
+#catwatcher1-tail {
+    width: 8%;
+    top: 58%;
+    left: 28%;
+    animation-name: catwatcher-tail;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+#catwatcher2 {
+    top: 51%;
+    left: 43%;
+}
+
+#catwatcher3 {
+    top: 55%;
+    left: 59%;
+}

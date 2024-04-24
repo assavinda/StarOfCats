@@ -1,0 +1,139 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&display=swap');
+
+@keyframes planets{
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -3%;
+    }
+}
+
+.planets {
+    animation-name: planets;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+#planet1 {
+    animation-direction: alternate-reverse;
+}
+
+#planet3 {
+    animation-direction: alternate-reverse;
+}
+
+#postcat {
+    top: 4%;
+}
+
+#postcard {
+    width: 60%;
+    height: 60%;
+    top: 15%;
+    background-color: #F768B8;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.131);
+    border-radius: 50px;
+    display: flex;
+}
+
+#tobox {
+    width: 80%;
+    height: 10%;
+    margin-left: 2%;
+    display: flex;
+}
+
+#to {
+    width: 85%;
+    height: 100%;
+    padding-left: 2%;
+    margin-top: 4.2%;
+    font-size: 1.5vw;
+}
+
+#write {
+    width: 70%;
+    height: 50%;
+    padding-left: 5%;
+    padding-top: 5%;
+    margin-top: 12%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 70px;
+    font-size: 1.5vw;
+    resize: none;
+}
+
+#cardscene {
+    display: flex;
+    justify-content: center;
+}
+
+#frombox {
+    width: 50%;
+    height: 10%;
+    margin-left: 45%;
+    margin-top: 46.5%;
+    display: flex;
+    justify-items: end;
+}
+
+#from {
+    width: 80%;
+    height: 100%;
+    padding-left: 4%;
+    margin-top: 7%;
+    margin-left: 5%;
+    font-size: 1.5vw;
+}
+
+#cardlogo {
+    width: 20%;
+    top: 70%;
+}
+
+#stardec1 {
+    width: 10%;
+    left: 87%;
+    top: 5%;
+    rotate: 10deg;
+}
+
+#taptowrite {
+    width: 20%;
+    font-size: 3vw;
+    font-family: Mali;
+    font-weight: 700;
+    left: 39.9%;
+    top: 38%;
+    text-align: center;
+    color: white;
+    animation-name: tap;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes catcar {
+    0% {
+        left: -70%;
+    }
+
+    100% {
+        left: 90%;
+    }
+}
+
+#catcar {
+    animation-name: catcar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}

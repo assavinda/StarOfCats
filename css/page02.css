@@ -1,0 +1,173 @@
+@keyframes mekmap {
+    0% {
+        width: 105%;
+        height: 100%;
+        left: -2.5%;
+        top: -2.5%;
+    }
+
+    100% {
+        width: 100%;
+        height: 95%;
+        left: 0%;
+        top: 0%;
+    }
+}
+
+.mekmap {
+    justify-content: center;
+    animation-name: mekmap;
+    animation-duration: 1.5s;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+.ebaimai {
+    width: 10%;
+}
+
+#ebaimai01 {
+    left: 27%;
+    top: 5%;
+}
+
+#ebaimai02 {
+    left: 61%;
+    top: 12%;
+}
+
+#ebaimai03 {
+    left: 40%;
+    top: 90%;
+}
+
+#ewood {
+    height: 85%;
+}
+
+#linemap {
+    top: 0%;
+    left: -1%;
+    height: 90%;
+}
+
+.rooms {
+    --width: 20%;
+    --top: 0%;
+    --left: 0%;
+    width: calc(var(--width));
+}
+
+#room01 {
+    left: calc(var(--left) + 9%);
+    top: calc(var(--top) + 7%);
+}
+
+#room02 {
+    left: calc(var(--left) + 40%);
+    top: calc(var(--top) + 11%);;
+}
+
+#room03 {
+    left: calc(var(--left) + 70%);
+    top: calc(var(--top) + 11%);
+}
+
+#room04 {
+    left: calc(var(--left) + 11.5%);
+    top: calc(var(--top) + 54%);
+}
+
+#room05 {
+    left: calc(var(--left) + 40%);
+    top: calc(var(--top) + 54.5%);
+}
+
+#room06 {
+    left: calc(var(--left) + 70%);
+    top: calc(var(--top) + 53%);
+}
+
+.rooms:hover {
+    filter: drop-shadow(0px 0px 0.4vw #ffffff);
+    --width: 24%;
+    --top: -2%;
+    --left: -2%;
+}
+
+.circlemap {
+    height: 90%;
+}
+
+@keyframes epurple {
+    0% {
+        rotate: -10deg;
+    }
+
+    100% {
+        rotate: 10deg;
+        left: 30.5%;
+    }
+}
+
+#epurple {
+    width: 5%;
+    left: 29%;
+    top: 41%;
+    animation-name: epurple;
+    animation-duration: 2s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes mapcats {
+    0% {
+        rotate: -10deg;
+    }
+
+    100% {
+        rotate: 10deg;
+    }
+}
+
+.mapcats {
+    --width: 7%;
+    --height: 0%;
+    animation-name: mapcats;
+    animation-duration: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+#mapcat01 {
+    width: calc(var(--width));
+    height: calc(var(--height) + 10%);
+    left: 9%;
+    top: 40%;
+}
+
+#mapcat02 {
+    width: calc(var(--width));
+    height: calc(var(--height) + 10%);
+    animation-direction: alternate-reverse;
+    left: 36%;
+    top: 37%;
+}
+
+#mapcat03 {
+    width: calc(var(--width) - 2%);
+    height: calc(var(--height) + 10%);
+    left: 56%;
+    top: 44%;
+}
+
+#mapcat04 {
+    width: calc(var(--width) - 2.5%);
+    height: calc(var(--height) + 10%);
+    animation-direction: alternate-reverse;
+    left: 85%;
+    top: 36%;
+}

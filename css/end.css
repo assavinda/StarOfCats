@@ -1,0 +1,103 @@
+@keyframes cat1hand1 {
+    0% {
+        rotate: 0deg;
+        top: 58%;
+        left: 8%;
+    }
+
+    100% {
+        rotate: -30deg;
+        top: 65%;
+        left: 10%;
+    }
+}
+
+#cat1hand1 {
+    width: 20%;
+    left: 8%;
+    top: 58%;
+    animation-name: cat1hand1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cat1hand2 {
+    0% {
+        rotate: 0deg;
+        top: 45%;
+        left: 42%;
+    }
+
+    100% {
+        rotate: 30deg;
+        top: 52%;
+        left: 42%;
+    }
+}
+
+#cat1hand2 {
+    width: 20%;
+    left: 42%;
+    top: 45%;
+    animation-name: cat1hand2;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
+
+@keyframes cat2hand {
+    0% {
+        top: -5%;
+    }
+
+    100% {
+        top: 5%;
+    }
+}
+
+#cat2hand {
+    animation-name: cat2hand;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes gogo {
+    0% {
+        left: -70%;
+    }
+
+    100% {
+        left: 100%;
+    }
+}
+
+#gogo {
+    animation-name: gogo;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: normal;
+}
+
+@keyframes earthhome {
+    0% {
+        top: 0%;
+    }
+
+    100% {
+        top: -2%;
+    }
+}
+
+#earthhome {
+    animation-name: earthhome;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+}
