@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('click', function() {
     var audio = document.getElementById('backgroundMusic');
     audio.play();
     var isPlaying = sessionStorage.getItem('bgMusicPlaying');
