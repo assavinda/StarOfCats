@@ -96,3 +96,7 @@
     top: 6%;
     left: 83.7%;
 }
+
+.bubblediv {
+    z-index: 100;
+}

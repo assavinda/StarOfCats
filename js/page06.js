@@ -7,13 +7,6 @@ const cwtail = document.getElementById('catwatcher1-tail');
 
 animateFunc.PauseThenAnimate(cwtail,250);
 
-const cat1 = document.getElementById('catwatcher1');
-// cat1.addEventListener('click',() => {
-    
-// })
-
-//text
-
 const next = document.getElementById('next6');
 const text = document.getElementById('text06');
 
@@ -56,12 +49,89 @@ next.addEventListener('click',() => {
     }
 });
 
+const camtoearth = document.getElementById('camtoearth')
+const people = document.getElementById('people')
+
+thispage.addEventListener('click',(e) => {
+    if(e.target.classList.contains('catwatchers')) {
+        thispage.classList.add('hidden')
+        camtoearth.classList.remove('hidden')
+    }
+})
+
+
+
+let isMouseDown = false;
+let startXPercent = 0;
+let startYPercent = 0;
+const containerWidth = camtoearth.clientWidth;
+const containerHeight = (9/15 * camtoearth.clientWidth);
+
+thispage.addEventListener('click',(e) => {
+    if(e.target.classList.contains('catwatchers')) {
+        camtoearth.style.pointerEvents = 'all'
+        camtoearth.style.opacity = 1
+    }
+})
+
+camtoearth.addEventListener('mousedown', (event) => {
+    isMouseDown = true;
+    startXPercent = (event.clientX - people.offsetLeft) / containerWidth * 100;
+    startYPercent = (event.clientY - people.offsetTop) / containerHeight * 100;
+});
+
+camtoearth.addEventListener('mouseup', () => {
+    isMouseDown = false;
+    console.log(people.style.left,'x')
+});
+
+camtoearth.addEventListener('mousemove', (event) => {
+    if (isMouseDown) {
+        let x = ((event.clientX / containerWidth * 100) - startXPercent);
+        let y = ((event.clientY / containerHeight * 100) - startYPercent);
+
+        if(x <= 38 && x >= -38) {
+            people.style.left = x + '%';
+        }
+        else if(x <= -38) {
+            people.style.left = -38.1 + '%';
+        }
+        else if(x >= 38) {
+            people.style.left = 38.1 + '%';
+        }
+
+        if(y <= 31 && y >= -31) {
+            people.style.top = y + '%';
+        }
+        else if(y <= -31) {
+            people.style.top = -31.1 + '%';
+        }
+        else if(y >= 31) {
+            people.style.top = 31.1 + '%';
+        }
+    }
+});
+
+const closescope = document.getElementById('closescope')
+
+closescope.addEventListener('click',() => {
+    thispage.classList.remove('hidden')
+    camtoearth.style.pointerEvents = 'none'
+    camtoearth.style.opacity = 0
+    people.style.left = 0 + '%'
+    people.style.top = 0 + '%'
+})
+
 const observer = new MutationObserver(mutationsList => {
     mutationsList.forEach(mutation => {
       if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
         index = 0;
         text.innerHTML = script[0];
         next.innerHTML = '→';
+        startXPercent = 0;
+        startYPercent = 0;
+        people.style.left = 0 + '%'
+        people.style.top = 0 + '%'
       }
     });
   });

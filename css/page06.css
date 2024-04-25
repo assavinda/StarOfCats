@@ -60,3 +60,25 @@
     top: 55%;
     left: 59%;
 }
+
+#camtoearth {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#scope {
+    height: 100%;
+    width: 100%;
+    place-items: center;
+}
+
+#scopeview {
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+
+#people {
+    left: 0%;
+    top: 0%;
+}
