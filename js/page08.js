@@ -14,10 +14,6 @@ randompic.onanimationiteration = () => {
     backbtn.classList.remove('hidden');
 }
 
-gachascene.onanimationiteration = () => {
-    gachascene.style.animationPlayState = 'paused';
-}
-
 randomball.onanimationiteration = () => {
     randomball.style.animationPlayState = 'paused';
     setTimeout(() => {
@@ -34,7 +30,7 @@ click.onanimationiteration = () => {
         randomball.classList.remove('hidden');
         setTimeout(() => {
             randomball.style.animationPlayState = 'running';
-            gachascene.style.animationPlayState = 'running';
+            gachascene.classList.add('hidden')
         },500)
     },500)
 }
@@ -107,6 +103,7 @@ backbtn.addEventListener('click',() => {
     click.style.pointerEvents = 'none';
     randomball.classList.add('hidden');
     tap.classList.add('hidden')
+    gachascene.classList.remove('hidden')
 });
 
 const observer = new MutationObserver(mutationsList => {
@@ -123,6 +120,7 @@ const observer = new MutationObserver(mutationsList => {
         click.style.pointerEvents = 'none';
         randomball.classList.add('hidden');
         tap.classList.add('hidden')
+        gachascene.classList.remove('hidden')
       }
     });
   });
