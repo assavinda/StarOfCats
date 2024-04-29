@@ -47,8 +47,9 @@ next.addEventListener('click',() => {
         credits.classList.remove('hidden')
         next.innerHTML = 'กลับสู่หน้าหลัก'
     }
-    else if(index == 6) {
+    else if(index >= 6) {
         window.location.reload()
+        index = 6
     }
 });
 
