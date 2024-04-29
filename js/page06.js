@@ -90,24 +90,24 @@ camtoearth.addEventListener('mousemove', (event) => {
         let x = ((event.clientX / containerWidth * 100) - startXPercent);
         let y = ((event.clientY / containerHeight * 100) - startYPercent);
 
-        if(x <= 38 && x >= -38) {
+        if(x <= 33 && x >= -33) {
             people.style.left = x + '%';
         }
-        else if(x <= -38) {
-            people.style.left = -38.1 + '%';
+        else if(x <= -33) {
+            people.style.left = -33.1 + '%';
         }
-        else if(x >= 38) {
-            people.style.left = 38.1 + '%';
+        else if(x >= 33) {
+            people.style.left = 33.1 + '%';
         }
 
-        if(y <= 31 && y >= -31) {
+        if(y <= 22 && y >= -22) {
             people.style.top = y + '%';
         }
-        else if(y <= -31) {
-            people.style.top = -31.1 + '%';
+        else if(y <= -22) {
+            people.style.top = -22.1 + '%';
         }
-        else if(y >= 31) {
-            people.style.top = 31.1 + '%';
+        else if(y >= 22) {
+            people.style.top = 22.1 + '%';
         }
     }
 });

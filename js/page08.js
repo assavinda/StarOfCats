@@ -39,6 +39,8 @@ click.onanimationiteration = () => {
     },500)
 }
 
+const tap = document.getElementById('taptowrite2')
+
 click.addEventListener('click',() => {
     click.style.animationPlayState = 'running';
     let ballNumber = Math.round(randomFunc(1,2));
@@ -85,6 +87,7 @@ next.addEventListener('click',() => {
         next.classList.add('hidden');
 
         click.style.pointerEvents = 'all';
+        tap.classList.remove('hidden')
     }
     else {
         index++;
@@ -103,6 +106,7 @@ backbtn.addEventListener('click',() => {
     backbtn.classList.add('hidden');
     click.style.pointerEvents = 'none';
     randomball.classList.add('hidden');
+    tap.classList.add('hidden')
 });
 
 const observer = new MutationObserver(mutationsList => {
@@ -118,6 +122,7 @@ const observer = new MutationObserver(mutationsList => {
         backbtn.classList.add('hidden');
         click.style.pointerEvents = 'none';
         randomball.classList.add('hidden');
+        tap.classList.add('hidden')
       }
     });
   });

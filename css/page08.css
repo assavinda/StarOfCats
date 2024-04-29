@@ -22,6 +22,26 @@
     animation-play-state: paused;
 }
 
+#taptowrite2 {
+    width: 20%;
+    font-size: 3vw;
+    font-family: Mali;
+    font-weight: 700;
+    left: 40.3%;
+    top: 58%;
+    text-align: center;
+    color: white;
+    filter: drop-shadow(0px 0px 0.3vw #3838385c);
+    animation-name: tap;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    pointer-events: none;
+}
+
+
+
 @keyframes click {
     0% {
         rotate: 0deg;
